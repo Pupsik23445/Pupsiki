@@ -1,0 +1,31 @@
+.notes-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.notes-actions {
+    margin: 1.5rem 0;
+}
+
+.add-note {
+    padding: 0.7rem 1.5rem;
+    background-color: var(--medium-gray);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-note:hover {
+    background-color: var(--dark-gray);
+}
+
+.notes-list {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    min-height: 300px;
+}
