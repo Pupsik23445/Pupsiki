@@ -42,3 +42,27 @@
 .login-button:hover {
     background-color: var(--dark-gray);
 }
+
+.animation-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+
+.floating-object{
+    width:100px;
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform:translateY(0px)
+    }
+    50%{
+        transform:translateY(-15px)
+    }
+    100%{
+        transform:translateY(0px)
+    }
+}
