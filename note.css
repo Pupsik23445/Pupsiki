@@ -87,3 +87,35 @@ body {
 .history-color { background-color: #fce4ec; }
 .info-color { background-color: #f3f7e0; }
 .default-color { background-color: #f5f5f5; }
+
+
+@keyframes swing {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.swing{
+    animation: swing 2s ease-in-out infinite;
+    transform-origin: top center;
+}
+.my-sidebar{
+    height: 20px;
+    width: auto;
+}
+.note-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgb(0, 0, 0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
